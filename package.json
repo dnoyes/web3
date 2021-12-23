@@ -10,7 +10,7 @@
     "node": "hardhat node",
     "deploy": "npm run compile; hardhat run --network localhost",
     "start": "http-server -c-1 -p 6969",
-    "dev": "concurrently -c 'gray,gray,green,blue,cyan' npm:clean 'webpack --watch' npm:node npm:start"
+    "dev": "concurrently -c 'gray,green,blue' 'webpack --watch' npm:node npm:start"
   },
   "keywords": [],
   "author": "",
