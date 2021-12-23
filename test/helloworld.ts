@@ -3,7 +3,7 @@ import {ethers} from "hardhat";
 import {expect} from "chai";
 
 describe("hello world", () => {
-    it("should say hello, world", async () => {
+    it("should say hello, fools", async () => {
         const HelloWorld = await ethers.getContractFactory("HelloWorld");
 
         /* Hardhat will:
@@ -15,6 +15,6 @@ describe("hello world", () => {
         const hello = await HelloWorld.deploy();
         await hello.deployed(); // confirm it's on network
 
-        expect(await hello.hello()).to.equal("Hello, World");
+        expect(await hello.hello()).to.equal("Hello, fools2!");
     });
 });
